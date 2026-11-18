@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="OfficeLab v2.1.2: 75 modul lengkap untuk pegawai administrasi kampus, tujuh jalur kerja, studi kasus dan praktik interaktif offline.">
+  <title>OfficeLab v2.1.2 — Pelatihan Administrasi Kampus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-view">Lewati navigasi</a>
+  <div class="app-shell">
+    <aside class="sidebar" tabindex="0" aria-label="Navigasi pembelajaran. Gulir ke bawah untuk melihat semua menu">
+      <div class="brand"><div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></div><div><strong>OfficeLab<span class="brand-dot">.</span></strong><small>CAMPUS ADMIN TRAINING · V2.1.2</small></div></div>
+      <div class="sidebar-label">APLIKASI</div>
+      <nav id="course-nav" class="course-nav" aria-label="Pilih aplikasi"></nav>
+      <div class="sidebar-label sidebar-label-gap">JELAJAHI</div>
+      <nav id="section-nav" class="section-nav" aria-label="Pilih bagian"></nav>
+      <div class="sidebar-bottom"><div class="side-progress"><div class="side-progress-head"><span>Progres keseluruhan</span><strong id="overall-percent">0%</strong></div><div class="track"><div id="overall-bar" class="track-fill" style="width:0%"></div></div><small>Progres tersimpan otomatis di browser ini.</small></div><div class="offline-pill"><span class="pulse-dot"></span> 100% OFFLINE</div></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><div class="breadcrumbs"><span>OfficeLab</span><span class="crumb-slash">/</span><strong id="breadcrumb-course">Excel</strong><span class="crumb-slash">/</span><span id="breadcrumb-section">Beranda</span></div><div class="top-actions"><button class="icon-btn" type="button" id="open-search" title="Cari materi, shortcut, atau rumus (Ctrl+K)" aria-label="Buka pencarian"><span class="search-icon">⌕</span><span class="search-text">Cari materi</span><kbd>Ctrl K</kbd></button><button class="square-icon-btn" id="open-about" type="button" title="Tentang OfficeLab" aria-label="Buka halaman Tentang OfficeLab">ⓘ</button><button class="square-icon-btn" id="theme-toggle" type="button" title="Ganti tampilan" aria-label="Ganti mode terang/gelap">☾</button></div></header>
+      <main class="main" id="main-view" tabindex="-1" aria-live="polite"></main>
+      <footer class="footnote"><span>OfficeLab v2.1.2 · Pelatihan staf administrasi kampus</span><span>Untuk pembelajaran; bukan produk resmi atau pengganti Microsoft Office.</span></footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="search-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-label="Pencarian materi">
+    <div class="search-modal"><div class="search-modal-top"><span class="search-icon">⌕</span><input id="global-search" type="search" placeholder="Cari: SUM, Heading, Slide, Ctrl + S..." aria-label="Cari semua materi" autocomplete="off"><button id="close-search" class="small-quiet" type="button">Esc</button></div><div id="global-search-results" class="search-results"></div><div class="modal-help">Pilih hasil untuk membuka materi · Tekan Esc untuk menutup</div></div>
+  </div>
+  <div id="presentation-overlay" class="presentation-overlay hidden" role="dialog" aria-modal="true" aria-label="Mode presentasi"><div id="presentation-content" class="presentation-content"></div><div class="presentation-bottom"><span id="presentation-count"></span><span>← → untuk navigasi · Esc untuk keluar</span><div><button id="presentation-prev" class="pres-btn" type="button">← Sebelumnya</button><button id="presentation-next" class="pres-btn" type="button">Berikutnya →</button><button id="presentation-close" class="pres-btn" type="button">Tutup ✕</button></div></div></div>
+  <script src="cases.js" defer></script>
+  <script src="data.js" defer></script>
+  <script src="curriculum.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
